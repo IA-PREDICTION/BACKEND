@@ -2,6 +2,7 @@ import enum
 from sqlalchemy import Column, Integer, String, Boolean, TIMESTAMP, Enum, ForeignKey
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy import text
+from sqlalchemy.orm import relationship
 from app.db.base_class import Base
 
 class Role(str, enum.Enum):
@@ -32,3 +33,6 @@ class Utilisateur(Base):
     preferences = Column(JSONB, nullable=True)
     created_at = Column(TIMESTAMP, server_default=text("CURRENT_TIMESTAMP"))
     updated_at = Column(TIMESTAMP, server_default=text("CURRENT_TIMESTAMP"))
+
+    # 🔗 Relation avec abonnements
+    abonnements = relationship("Abonnement", back_populates="user")
