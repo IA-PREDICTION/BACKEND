@@ -14,3 +14,9 @@ from app.models.stat_match import StatistiquesMatch
 from app.models.h2h import HistoriqueConfrontation
 from app.models.joueur import Joueur
 from app.models.blessure import BlessureSuspension
+from app.models.ml_model import ModeleIA
+from app.models.feature_store_meta import FeatureStoreMeta
+from app.models.features_engineering import FeaturesEngineering
+from app.models.prediction import Prediction
+from app.models.prediction_log import LogPrediction
+from app.models.model_monitoring import ModelMonitoring
