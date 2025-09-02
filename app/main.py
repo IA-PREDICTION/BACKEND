@@ -40,3 +40,5 @@ app.include_router(reactions.router, prefix="/api/v1/reactions", tags=["reaction
 app.include_router(follows.router, prefix="/api/v1/follows", tags=["follows"])
 
 app.include_router(realtime_cache.router, prefix="/api/v1", tags=["realtime-cache"])
+
+app.include_router(monitoring.router, prefix="/api/v1", tags=["monitoring"])

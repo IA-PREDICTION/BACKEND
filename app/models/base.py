@@ -37,9 +37,16 @@ from app.models.commentaire import Commentaire
 from app.models.reaction import Reaction
 from app.models.suivi import SuiviUtilisateur
 
-#Temps réel et cache 
+# Temps réel et cache 
 from app.models.websocket_connection import WebsocketConnection
 from app.models.cache_entry import CacheEntry
 from app.models.queue_job import QueueJob
+
+# Monitoring et logs 
+from app.models.log_activite import LogActivite
+from app.models.metrique_systeme import MetriqueSysteme
+from app.models.notification import Notification
+from app.models.erreur_application import ErreurApplication
+
 
 
