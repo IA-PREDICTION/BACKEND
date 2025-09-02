@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     REFRESH_TOKEN_EXPIRE_DAYS: int = 30
 
     SQLALCHEMY_DATABASE_URI: str = ""
+    DB_SCHEMA: str = "public"
 
     class Config:
         env_file = ".env"
