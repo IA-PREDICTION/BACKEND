@@ -37,3 +37,9 @@ from app.models.commentaire import Commentaire
 from app.models.reaction import Reaction
 from app.models.suivi import SuiviUtilisateur
 
+#Temps réel et cache 
+from app.models.websocket_connection import WebsocketConnection
+from app.models.cache_entry import CacheEntry
+from app.models.queue_job import QueueJob
+
+
