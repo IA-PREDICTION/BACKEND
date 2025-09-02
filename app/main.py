@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from app.api.v1.endpoints import (
-    auth, ml_predict, quota, sports, leagues, teams, matches, odds, stats, h2h, players, injuries,
+    auth, comments, follows, ml_predict, quota, reactions, sports, leagues, teams, matches, odds, stats, h2h, players, injuries,
     ml_models, feature_store, features_eng, predictions as ia_predictions, prediction_logs, monitoring, user_pronostics
 )
 
@@ -34,3 +34,7 @@ app.include_router(ml_predict.router, prefix="/api/v1/ml/predict", tags=["predic
 app.include_router(user_pronostics.router, prefix="/api/v1/pronostics", tags=["pronostics"])
 
 app.include_router(quota.router, prefix="/api/v1/quota", tags=["quota"])
+
+app.include_router(comments.router, prefix="/api/v1/comments", tags=["comments"])
+app.include_router(reactions.router, prefix="/api/v1/reactions", tags=["reactions"])
+app.include_router(follows.router, prefix="/api/v1/follows", tags=["follows"])

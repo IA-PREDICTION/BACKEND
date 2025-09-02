@@ -32,3 +32,8 @@ from app.models.model_monitoring import ModelMonitoring
 
 # Pronostics utilisateurs
 from app.models.user_pronostic import PronosticUtilisateur
+
+from app.models.commentaire import Commentaire
+from app.models.reaction import Reaction
+from app.models.suivi import SuiviUtilisateur
+
