@@ -47,6 +47,7 @@ from app.models.log_activite import LogActivite
 from app.models.metrique_systeme import MetriqueSysteme
 from app.models.notification import Notification
 from app.models.erreur_application import ErreurApplication
-
-
+# Ingestion et synchronisation
+from app.models.source_donnee import SourceDonnee
+from app.models.log_ingestion import LogIngestion
 
